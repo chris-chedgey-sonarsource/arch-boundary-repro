@@ -4,7 +4,7 @@
 **Reproduction:** this repository — see [`QueryRunner.java`](src/main/java/com/example/QueryRunner.java)
 **Affects:** SonarQube Cloud **production** (sonarcloud.io, verified live) and SonarQube Server
 **2026.5.0.131240** (LTA candidate). Architecture plugins `3.3 (build 12101)`.
-**Severity:** high — silently removes *all* architecture data for an affected project.
+**Severity:** high — silently removes *all* exit points and entry points for an affected project, and therefore every cross-project relationship. Current architecture still populates, so the project looks healthy.
 
 ## Summary
 
